@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+  <head>
+     <meta charset="UTF-8">
+     <title>Restaurant Survey Form</title>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Restaurant Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve</p>
+    <form id="survey-form" method="post">
+      <label id="name-label">Name <input id="name" name="name" placeholder="Enter your name" type="text" required>
+      </label>
+      <label id="email-label">Email <input id="email" name="email" placeholder="Enter your email" type="email" required></label>
+      <label id="number-label">Age(optional) <input type="number" id="number" name="age" placeholder="age" min="13" max="120"></label>
+      <label for="dropdown">How did you hear about us? 
+        <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Friends/Family</option>
+        <option value="2">Billboard ADs</option>
+        <option value="3">Social media ADs</option>
+        </select>
+       </label>
+      <div>
+         Was this your first time visiting the restaurant? 
+         <label for="yes"><input id="yes" name="answer" type="radio" value="yes" />Yes</label>
+         <label for="no"><input id="no" name="answer" type="radio" value="no" />No </label>
+      </div>
+      <div>
+        Would you recommend us to a friend?
+        <label for="definitely"><input id="definitely" type="radio" name="option" value="definitely" /> Definitely </label>
+        <label for="maybe"><input id="maybe" type="radio" name="option" value="maybe">Maybe </label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="not-sure" name="option" /> Not Sure </label>
+       </div>
+       <div>
+         What would you like to see improved?
+         <label for="menu-design"><input type="checkbox" id="menu-design" name="menu-design" value="menu-design" /> Menu Design </label>
+         <label for="ambience"><input type="checkbox" id="ambience" name="ambience" value="ambience" /> Ambience</label>
+         <label for="hygiene"><input type="checkbox" id="hygiene" name="hygiene" value="hygiene" /> Hygiene </label>
+         <label for="reception"><input type="checkbox" id="reception" name="reception" value="reception" /> Reception </label>
+       </div>
+<label for="comment">Any comments or Suggestions <textarea id="comment" name="comment" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+</label>
+<input id="submit" value="submit" type="submit" />
+
+
+    </form>
+  </body>
